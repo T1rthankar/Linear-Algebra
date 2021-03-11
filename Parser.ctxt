@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Parser
+comment0.text=\r\n\ Takes\ input\ from\ the\ user\ and\ constructs\ a\ matrix\ from\ the\ input\ received.\r\n\ \r\n\ \u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\r\n\ Provides\ input\ capabilities\ for\ so\ that\ an\ user\ can\ actually\ use\ the\ Gauss\r\n\ and\ GaussJordan2\ classes\ to\ solve\ systems\ of\ linear\ equations.\r\n\ \r\n\ Assumes\ an\ adversarial\ user\ and\ does\ extensive\ input\ validation.\r\n\r\n\ @author\ Rohith\ Nibhanupudi\ (lead\ contributor)\r\n\ @author\ Tirthankar\ Mazumder\ (lead\ contributor\ (the\ real\ leader,\ though))\r\n\ @version\ 8.10.20\r\n
+comment1.params=
+comment1.target=void\ instructions()
+comment2.params=m
+comment2.target=boolean\ takeInput(Matrix)
+comment3.params=s
+comment3.target=boolean\ validate(java.lang.String)
+comment4.params=s\ m
+comment4.target=boolean\ setMatrix(java.lang.String[],\ Matrix)
+numComments=5

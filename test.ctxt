@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=test
+comment0.text=\r\n\ A\ testing\ program\ that\ tests\ how\ well\ the\ Matrix.toString\ works.\ Uses\ random\ numbers\ for\ the\ numerator\r\n\ and\ denominators\ of\ the\ Fractions.\r\n\r\n\ @author\ Tirthankar\ Mazumder\r\n\ @version\ 1.7\r\n\ @date\ 8th\ August,\ 2020\ (minor\ updates\ on\ 9th\ and\ 10th\ August,\ 2020)\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=min\ max
+comment2.target=long\ random(long,\ long)
+numComments=3

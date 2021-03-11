@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Gauss
+comment0.text=\r\n\ Performs\ Gaussian\ Elimination\ on\ the\ matrix\ input\ by\ the\ user.\ Returns\ the\r\n\ ref\ (row\ echelon\ form)\ of\ the\ matrix.\r\n\r\n\ @author\ Tirthankar\ Mazumder\r\n\ @date\ June\ 5,\ 2020\ --\ June\ 6,\ 2020\ (updates\ done\ on\ 8th\ August,\ 2020)\r\n\ @version\ 2.0\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=m\ reduce
+comment2.target=Matrix\ gaussEliminate(Matrix,\ boolean)
+comment2.text=\r\n\ Performs\ Gaussian\ Elimination\ on\ the\ matrix.\r\n
+comment3.params=row\ column\ m
+comment3.target=Matrix\ recursiveGEliminate(int,\ int,\ Matrix)
+numComments=4
