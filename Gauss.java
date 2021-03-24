@@ -10,31 +10,57 @@ import java.util.*;
 public class Gauss {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-
-        System.out.print("Enter the number of equations: ");
-        int a = s.nextInt();
         
-        s.nextLine();
-        
-        System.out.print("Enter the number of variables: ");
-        int b = s.nextInt();
-
-        Matrix mat = new Matrix(a, b + 1);
+        System.out.print("Would you like to find the ref of \n1)a system of linear");
+        System.out.print("equations, or \n2) a matrix?");
         
         System.out.println();
         
-        Parser.takeInput(mat);
+        System.out.print("Please enter an option here: ");
         
-        System.out.println("Original matrix:");
-        System.out.println(mat.toString());
+        int choice = s.nextInt();
         
-        mat = gaussEliminate(mat, true);
-        
-        System.out.println("Row echelon form:");
-        System.out.println(mat.toString());
-        
-        System.out.println("Row echelon form, represented as an augmented matrix:");
-        System.out.println(mat.augmentedMatrixToString());
+        if (choice == 1) {
+            System.out.print("Enter the number of equations: ");
+            int a = s.nextInt();
+            
+            s.nextLine();
+            
+            System.out.print("Enter the number of variables: ");
+            int b = s.nextInt();
+    
+            Matrix mat = new Matrix(a, b + 1);
+            
+            System.out.println();
+            
+            Parser.takeInput(mat);
+            
+            System.out.println("Original matrix:");
+            System.out.println(mat.toString());
+            
+            mat = gaussEliminate(mat, true);
+        } else if (choice == 2) {
+            System.out.print("Enter the number of rows: ");
+            int r = s.nextInt();
+            
+            s.nextLine();
+            
+            System.out.print("Enter the number of columns: ");
+            int c = s.nextInt();
+    
+            Matrix mat = new Matrix(r, c);
+            
+            System.out.println();
+            
+            Parser.takeInput(mat);
+            
+            System.out.println("Original matrix:");
+            System.out.println(mat.toString());
+            
+            mat = gaussEliminate(mat, true);
+        } else {
+            System.out.println("Invalid choice. Exiting...");    
+        }
     }
 
     /**
