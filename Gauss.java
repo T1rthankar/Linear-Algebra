@@ -11,14 +11,16 @@ public class Gauss {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         
-        System.out.print("Would you like to find the ref of \n1)a system of linear");
-        System.out.print("equations, or \n2) a matrix?");
+        System.out.print("Would you like to find the ref of \n1) a system of linear");
+        System.out.print(" equations, or \n2) a matrix?\n");
         
         System.out.println();
         
         System.out.print("Please enter an option here: ");
         
         int choice = s.nextInt();
+        
+        System.out.println();
         
         if (choice == 1) {
             System.out.print("Enter the number of equations: ");
@@ -33,12 +35,13 @@ public class Gauss {
             
             System.out.println();
             
-            Parser.takeInput(mat);
-            
-            System.out.println("Original matrix:");
-            System.out.println(mat.toString());
-            
-            mat = gaussEliminate(mat, true);
+            if (Parser.takeInput(mat)) {
+
+                System.out.println("Original matrix:");
+                System.out.println(mat.toString());
+                
+                mat = gaussEliminate(mat, true);
+            }
         } else if (choice == 2) {
             System.out.print("Enter the number of rows: ");
             int r = s.nextInt();
@@ -51,13 +54,13 @@ public class Gauss {
             Matrix mat = new Matrix(r, c);
             
             System.out.println();
-            
-            Parser.takeInput(mat);
-            
-            System.out.println("Original matrix:");
-            System.out.println(mat.toString());
-            
-            mat = gaussEliminate(mat, true);
+
+            if (Parser.takeInput(mat)) {
+                System.out.println("Original matrix:");
+                System.out.println(mat.toString());
+                
+                mat = gaussEliminate(mat, true);
+            }
         } else {
             System.out.println("Invalid choice. Exiting...");    
         }

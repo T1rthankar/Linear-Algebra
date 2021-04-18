@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=GaussJordan
+comment0.text=\r\n\ Performs\ Gauss-Jordan\ Elimination\ on\ the\ matrix\ input\ by\ the\ user.\r\n\ Returns\ the\ rref\ (reduced\ row\ echelon\ form)\ of\ the\ matrix.\r\n\r\n\ @author\ Tirthankar\ Mazumder\r\n\ @date\ June\ 5,\ 2020\ --\ June\ 6th,\ 2020\ (updates\ done\ on\ 8th\ August,\ 2020)\r\n\ @version\ 2.0\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=m\ reduce\ is_system
+comment2.target=Matrix\ gaussJordanEliminate(Matrix,\ boolean,\ boolean)
+comment2.text=\r\n\ Performs\ Gauss-Jordan\ Elimination\ on\ the\ matrix.\r\n
+numComments=3

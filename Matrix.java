@@ -12,7 +12,7 @@ import java.math.BigInteger; //minimizing dependencies to precisely what we need
  */
 public class Matrix {
     private Fraction[][] matrix;
-    private int row, column;
+    private final int row, column;
 
     public Matrix(int r, int c) {
         row = r;
@@ -25,7 +25,7 @@ public class Matrix {
     }
     
     private static String getFormatString(int spaces) {
-        int leftSpaces = 0;
+        int leftSpaces;
         if (spaces % 2 == 0)
             leftSpaces = spaces / 2;
         else
