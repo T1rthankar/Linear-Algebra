@@ -5,12 +5,12 @@ import java.math.BigInteger;
  * 
  * —————————————————————————————————————————————————————————————————————————————
  * Provides input capabilities for so that an user can actually use the Gauss
- * and GaussJordan2 classes to solve systems of linear equations.
+ * and GaussJordan classes to solve systems of linear equations.
  * 
  * Assumes an adversarial user and does extensive input validation.
  *
- * @author Rohith Nibhanupudi (lead contributor)
- * @author Tirthankar Mazumder (lead contributor (the real leader, though))
+ * @author Rohith Nibhanupudi
+ * @author Tirthankar Mazumder (lead contributor)
  * @version 8.10.20
  */
 public class Parser {
@@ -39,7 +39,8 @@ public class Parser {
             split.add(s);
         }
 
-        /** This little gem was written because it is needed. 'Nuff said.
+        /**
+         * This little gem was written because it is needed. 'Nuff said.
          * 
          * The idea is that we'll use an ArrayList to temporarily hold all the raw input.
          * We do that so that we can deal with the case where the user breaks the input
@@ -74,7 +75,7 @@ public class Parser {
             //we are consuming the second Enter key press
             //It's dirty because the other case actually requires it for the program to work correctly, but this is
             //just fluff
-            sc.close(); //Since we are done with the Scanner, it's a good idea to close it.
+            sc.close(); // Since we are done with the Scanner, it's a good idea to close it.
             split.trimToSize();
             return setMatrix((String[]) split.toArray(new String[0]), m);
         } else {
